@@ -1,0 +1,18 @@
+{
+	"folders": [
+		{
+			"path": "../stl"
+		},
+		{
+			"path": "."
+		},
+		{
+			"path": "../function_pointers"
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"iostream": "cpp"
+		}
+	}
+}
