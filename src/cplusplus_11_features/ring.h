@@ -2,6 +2,7 @@
 #define _RING_H_
 
 #include<iostream>
+#include<initializer_list>
 using namespace std;
 
 template<class T>
@@ -23,10 +24,12 @@ public:
         delete [] m_ring;
     }
 
-    void add(T value ){
-        m_ring[m_pos++] = value;
-        if(m_pos == m_size){
-            m_pos = 0;
+    void add(initializer_list<T> values ){
+        for(auto value: values){
+            m_ring[m_pos++] = value;
+            if(m_pos == m_size){
+                m_pos = 0;
+            }
         }
     }
 

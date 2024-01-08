@@ -6,10 +6,7 @@ int main()
 {   
     ring<string> textring(3);
 
-    textring.add("one");
-    textring.add("two");
-    textring.add("three");
-    textring.add("four");
+    textring.add({"one", "two", "three", "four"}); 
 
     cout << endl;
     cout << "Using get()" << endl;
