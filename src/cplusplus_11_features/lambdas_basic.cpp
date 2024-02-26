@@ -7,6 +7,9 @@ void test(void (*pfunc)()){
     pfunc();
 }
 
+
+
+
 int main(){
     auto func = [](){ cout << "Hello from 'func()'" << endl; };
     
